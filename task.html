@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Image Change Button</title>
+</head>
+<body style="text-align:center; padding:40px;">
+
+  <h1>To change image press the button.</h1>
+
+  <img id="myImage" src="lightoff.png" width="300" height="350" />
+
+  <br><br>
+
+  <button onclick="changeImage()">Image Change Karo</button>
+
+  <script>
+    function changeImage() {
+      var image = document.getElementById('myImage');
+      if (image.src.includes("lightoff")) {
+        image.src = "lighton.png";
+      } else {
+        image.src = "lightoff.png";
+      }
+    }
+  </script>
+
+</body>
+</html>
